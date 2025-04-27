@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A912EAB62DB1A36A001EBC99 /* OpenMeteoSdk in Frameworks */ = {isa = PBXBuildFile; productRef = A912EAB52DB1A36A001EBC99 /* OpenMeteoSdk */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A912EA792DB19CFB001EBC99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A912EAB62DB1A36A001EBC99 /* OpenMeteoSdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,7 @@
 				A912EA642DB19CF9001EBC99 /* harvest */,
 				A912EA7B2DB19CFB001EBC99 /* harvestTests */,
 				A912EA852DB19CFB001EBC99 /* harvestUITests */,
+				A912EAB12DB1A332001EBC99 /* Frameworks */,
 				A912EA632DB19CF9001EBC99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +109,13 @@
 				A912EA822DB19CFB001EBC99 /* harvestUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A912EAB12DB1A332001EBC99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			);
 			name = harvest;
 			packageProductDependencies = (
+				A912EAB52DB1A36A001EBC99 /* OpenMeteoSdk */,
 			);
 			productName = harvest;
 			productReference = A912EA622DB19CF9001EBC99 /* harvest.app */;
@@ -208,6 +222,9 @@
 			);
 			mainGroup = A912EA592DB19CF9001EBC99;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A912EAB42DB1A351001EBC99 /* XCRemoteSwiftPackageReference "sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A912EA632DB19CF9001EBC99 /* Products */;
 			projectDirPath = "";
@@ -571,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A912EAB42DB1A351001EBC99 /* XCRemoteSwiftPackageReference "sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/open-meteo/sdk.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A912EAB52DB1A36A001EBC99 /* OpenMeteoSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A912EAB42DB1A351001EBC99 /* XCRemoteSwiftPackageReference "sdk" */;
+			productName = OpenMeteoSdk;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A912EA5A2DB19CF9001EBC99 /* Project object */;
 }
